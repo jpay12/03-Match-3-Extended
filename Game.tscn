@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Grid/grid.gd" type="Script" id=1]
+[ext_resource path="res://grid.gd" type="Script" id=1]
 [ext_resource path="res://Grid/Game.gd" type="Script" id=2]
 [ext_resource path="res://UI/HUD.gd" type="Script" id=3]
 [ext_resource path="res://UI/Level.gd" type="Script" id=4]
 [ext_resource path="res://UI/Goals.gd" type="Script" id=5]
+[ext_resource path="res://Assets/ka1.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 23
+font_data = ExtResource( 6 )
 
 [node name="Game" type="Node2D"]
 process_priority = 1
@@ -19,6 +24,8 @@ x_start = 100
 y_start = 800
 offset = 128
 y_offset = 128
+empty_spaces = null
+preset_spaces = null
 possible_pieces = PoolStringArray( "res://Pieces/Blue.tscn", "res://Pieces/Green.tscn", "res://Pieces/Red.tscn" )
 
 [node name="HintTimer" type="Timer" parent="Grid"]
@@ -80,7 +87,6 @@ color = Color( 1, 1, 1, 0.376471 )
 
 [node name="Level" type="Control" parent="UI"]
 pause_mode = 2
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 4 )
@@ -153,6 +159,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -104.0
 margin_bottom = -4.0
+custom_fonts/font = SubResource( 1 )
 align = 1
 valign = 1
 __meta__ = {

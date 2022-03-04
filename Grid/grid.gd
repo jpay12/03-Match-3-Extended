@@ -12,6 +12,14 @@ export (int) var y_start
 export (int) var offset
 export (int) var y_offset
 
+var piece = null
+var new_position = Vector2(0,0)
+
+var possible_pieces = [
+	load()
+	
+]
+
 # Obstacle Stuff
 export (PoolVector2Array) var empty_spaces
 

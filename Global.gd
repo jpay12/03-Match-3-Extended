@@ -8,18 +8,18 @@ var levels = [
 		"high score": 0,
 		"stars unlocked": 0,
 		"moves":20,
-		"goal": [{ "piece":"Red", "max":5, "count":0 }],
+		"goal": [{ "piece":"bird", "max":5, "count":0 }],
 		"level": "Level 1",
-		"instructions": "Match 5 red tiles"
+		"instructions": "Match 5 bird tiles"
 	}
 	,{
 		"unlocked": true,
 		"high score": 0,
 		"stars unlocked": 0,
 		"moves":20,
-		"goal": [{ "piece":"Red", "max":5, "count":0 },{ "piece":"Blue", "max":5, "count":0 }],
+		"goal": [{ "piece":"birds", "max":5, "count":0 },{ "piece":"frogs", "max":5, "count":0 }],
 		"level": "Level 2",
-		"instructions": "Match 5 red tiles and 5 blue tiles"
+		"instructions": "Match 5 birds tiles and 5 frogs tiles"
 	}
 ]
 
